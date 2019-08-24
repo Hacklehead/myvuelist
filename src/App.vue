@@ -1,12 +1,31 @@
 <template>
   <div id="app">
+        
     <div id="nav">
+      <app-header></app-header>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+// Imports
+//import showBlogs from '/components/showBlogs.vue';
+import header from './components/Header.vue';
+export default {
+    components: {
+        'app-header': header
+    },
+    data () {
+        return {
+        }
+    },
+    methods: {
+    }
+}
+</script>
 
 <style>
 #app {
